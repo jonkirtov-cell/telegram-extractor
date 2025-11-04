@@ -27,7 +27,7 @@ jobs:
         pyinstaller --onefile --name extractor main.py
 
     - name: Upload EXE artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: telegram-extractor
         path: dist/extractor.exe
